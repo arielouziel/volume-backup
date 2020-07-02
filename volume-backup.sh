@@ -10,10 +10,10 @@ usage() {
 }
 
 backup() {
-    if [ -z "$(ls -A /volume)" ]; then
-       >&2 echo "Volume is empty or missing, check if you specified a correct name"
-       exit 1
-    fi
+#    if [ -z "$(ls -A /volume)" ]; then
+#       >&2 echo "Volume is empty or missing, check if you specified a correct name"
+#       exit 1
+#    fi
 
     if ! [ "$ARCHIVE" == "-" ]; then
         mkdir -p `dirname /backup/$ARCHIVE`
